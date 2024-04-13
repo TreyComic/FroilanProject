@@ -2,8 +2,8 @@ package froilanfarms;
 
 abstract class Crop
 {
-    boolean isFertilized;
-    boolean isHarvested;
+    private boolean isFertilized;
+    private boolean isHarvested;
     public Crop()
     {
         boolean isFertilized = false;
@@ -18,4 +18,12 @@ abstract class Crop
         this.isHarvested = true;
     }
     public abstract EdibleObject yield();
+
+    public boolean isFertilized() {
+        return isFertilized;
+    }
+
+    public boolean isHarvested() {
+        return isHarvested;
+    }
 }

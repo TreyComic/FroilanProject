@@ -1,4 +1,6 @@
 package froilanfarms;
 
-public class Farm {
+public class Farm
+{
+    
 }
