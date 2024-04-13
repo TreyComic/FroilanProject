@@ -1,4 +1,4 @@
 package froilanfarms;
 
-public class Animal {
+public abstract class Animal implements NoiseMaker, Eater {
 }
