@@ -5,6 +5,9 @@ public class CornStalk extends Crop
     @Override
     public EdibleObject yield()
     {
-        return new EarCorn();
+        if ((super.isHarvested() && super.isFertilized()))
+            return new EarCorn();
+        else
+            return null;
     }
 }

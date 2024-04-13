@@ -7,9 +7,14 @@ public class CropRow
         for (Crop thisCrop:rowCrops)
             thisCrop.fertilize();
     }
-    public void harvest()
+    public EdibleObject[] harvest()
     {
-        for (Crop thisCrop:rowCrops)
-            thisCrop.harvest();
+        EdibleObject[] yield = new EdibleObject[rowCrops.length];
+        int counter = 0;
+        for (Crop thisCrop:rowCrops) {
+            yield[counter] = thisCrop.harvest();
+            counter++;
+        }
+        return yield;
     }
 }
