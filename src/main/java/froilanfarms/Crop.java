@@ -17,5 +17,5 @@ abstract class Crop
     {
         this.isHarvested = true;
     }
-    public EdibleObject yield();
+    public abstract EdibleObject yield();
 }
