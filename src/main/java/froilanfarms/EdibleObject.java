@@ -1,4 +1,6 @@
 package froilanfarms;
 
-public class EdibleObject {
+public class EdibleObject
+{
+
 }
