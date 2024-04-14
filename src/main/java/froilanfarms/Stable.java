@@ -1,4 +1,4 @@
 package froilanfarms;
 
-public class Stable {
+public class Stable{
 }

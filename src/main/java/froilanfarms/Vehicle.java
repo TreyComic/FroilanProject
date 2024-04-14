@@ -1,6 +1,6 @@
 package froilanfarms;
 
-public abstract class Vehicle implements NoiseMaker, Rideable {
+public abstract class Vehicle implements NoiseMaker, Rideable{
     private boolean isInUse;
 
     @Override

@@ -1,5 +1,10 @@
 package froilanfarms;
 
+<<<<<<< HEAD
+public class Chicken extends Animal implements Produce{
+    private boolean hasBeenFertilized;
+
+=======
 
 public class Chicken extends Animal implements Produce{
     private boolean hasBeenFertilized;
@@ -10,6 +15,7 @@ public class Chicken extends Animal implements Produce{
         uniqueID = id++;
     }
 
+>>>>>>> 4972cc33bd358456495f8e5a67800855b56d5fe3
     public boolean getHasBeenFertilized() {
         return hasBeenFertilized;
     }
@@ -18,6 +24,15 @@ public class Chicken extends Animal implements Produce{
         this.hasBeenFertilized = hasBeenFertilized;
     }
 
+<<<<<<< HEAD
+    public Chicken(boolean hasBeenFertilized) {
+        this.hasBeenFertilized = hasBeenFertilized;
+    }
+
+    @Override
+    public EdibleObject yield() {
+        return null;
+=======
     public void yield(){}
 
     @Override
@@ -28,5 +43,6 @@ public class Chicken extends Animal implements Produce{
     @Override
     public void makeNoise() {
 
+>>>>>>> 4972cc33bd358456495f8e5a67800855b56d5fe3
     }
 }
