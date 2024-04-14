@@ -1,4 +1,4 @@
 package froilanfarms;
 
-public interface Botanist {
+public interface Botanist{
 }
