@@ -1,4 +1,5 @@
 package froilanfarms;
 
-public class Egg extends EdibleObject{
+public class Egg extends EdibleObject
+{
 }

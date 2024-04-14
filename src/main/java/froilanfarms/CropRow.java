@@ -11,7 +11,8 @@ public class CropRow
     {
         EdibleObject[] yield = new EdibleObject[rowCrops.length];
         int counter = 0;
-        for (Crop thisCrop:rowCrops) {
+        for (Crop thisCrop:rowCrops)
+        {
             yield[counter] = thisCrop.harvest();
             counter++;
         }

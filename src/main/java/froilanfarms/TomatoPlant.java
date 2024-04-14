@@ -9,7 +9,7 @@ public class TomatoPlant extends Crop
     @Override
     public EdibleObject yield()
     {
-        if ((super.isHarvested() && super.isFertilized()))
+        if((super.isHarvested() && super.isFertilized()))
         {
             return new Tomato();
         }
