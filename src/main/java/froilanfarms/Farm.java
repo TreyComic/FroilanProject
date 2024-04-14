@@ -1,5 +1,6 @@
 package froilanfarms;
 
+<<<<<<< HEAD
 public class Farm {
     private Stable[] stables;
     private ChickenCoop[] chickenCoops;
@@ -54,4 +55,9 @@ public class Farm {
     public void setAircrafts(Aircraft[] aircrafts) {
         this.aircrafts = aircrafts;
     }
+=======
+public class Farm
+{
+    
+>>>>>>> main
 }
