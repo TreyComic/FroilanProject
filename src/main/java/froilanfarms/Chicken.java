@@ -10,7 +10,7 @@ public class Chicken extends Animal implements Produce{
         uniqueID = id++;
     }
 
-    public boolean isHasBeenFertilized() {
+    public boolean getHasBeenFertilized() {
         return hasBeenFertilized;
     }
 
@@ -19,4 +19,14 @@ public class Chicken extends Animal implements Produce{
     }
 
     public void yield(){}
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void makeNoise() {
+
+    }
 }
