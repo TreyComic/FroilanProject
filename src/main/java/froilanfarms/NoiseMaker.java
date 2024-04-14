@@ -1,4 +1,6 @@
 package froilanfarms;
 
-public interface NoiseMaker {
+public interface NoiseMaker
+{
+
 }
