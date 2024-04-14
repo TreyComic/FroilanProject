@@ -1,4 +1,4 @@
 package froilanfarms;
 
-public interface Rideable {
+public interface Rideable{
 }
