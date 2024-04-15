@@ -2,12 +2,11 @@ package froilanfarms;
 
 public class CornStalk extends Crop
 {
-    @Override
+    private boolean isFertilized;
+    private boolean isHarvested;
+        @Override
     public EdibleObject yield()
     {
-        if ((super.isHarvested() && super.isFertilized()))
-            return new EarCorn();
-        else
-            return null;
+        return new EarCorn();
     }
 }

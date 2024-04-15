@@ -15,7 +15,7 @@ public abstract class Crop
     }
     public void harvest()
     {
-        this.isHarvested = true;
+        this.isHarvested=true;
     }
     public abstract EdibleObject yield();
 

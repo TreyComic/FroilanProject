@@ -2,20 +2,20 @@ package froilanfarms;
 public class CropRow
 {
     Crop[] rowCrops;
+    public CropRow(Crop[] rowCrops)
+    {
+        this.rowCrops=rowCrops;
+    }
     public void fertilize()
     {
         for (Crop thisCrop:rowCrops)
             thisCrop.fertilize();
     }
-    public EdibleObject[] harvest()
+    public void harvest()
     {
-        EdibleObject[] yield = new EdibleObject[rowCrops.length];
-        int counter = 0;
         for (Crop thisCrop:rowCrops)
         {
-            yield[counter] = thisCrop.harvest();
-            counter++;
+            thisCrop.harvest();
         }
-        return yield;
     }
 }
