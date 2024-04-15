@@ -31,11 +31,11 @@ public class Chicken extends Animal implements Produce {
 
     @Override
     public void eat() {
-
+        System.out.println("Eats corn");
     }
 
     @Override
     public void makeNoise() {
-
+        System.out.println("cluck cluck");
     }
 }

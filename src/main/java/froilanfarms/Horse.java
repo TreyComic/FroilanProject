@@ -14,11 +14,11 @@ public class Horse extends Animal implements Rideable{
 
     @Override
     public void eat() {
-
+        System.out.println("Eats grains and oats.");
     }
 
     @Override
     public void makeNoise() {
-
+        System.out.println("Neigh!");
     }
 }
