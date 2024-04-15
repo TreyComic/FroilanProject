@@ -1,4 +1,4 @@
 package froilanfarms;
 
-public class ChickenCoop {
+public class ChickenCoop{
 }

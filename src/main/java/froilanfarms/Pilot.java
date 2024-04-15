@@ -1,4 +1,15 @@
 package froilanfarms;
 
-public interface Pilot{
+public class Pilot extends Person{
+    public Pilot(CropDuster cropDuster){
+    }
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void makeNoise() {
+
+    }
 }
