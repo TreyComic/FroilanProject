@@ -1,6 +1,6 @@
 package froilanfarms;
 
 public interface Rider{
-    void mount(Rideable rideable);
-    void dismount(Rideable rideable);
+    public void mount(Rideable rideable);
+    public void dismount(Rideable rideable);
 }
