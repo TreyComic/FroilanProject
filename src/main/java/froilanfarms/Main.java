@@ -7,5 +7,6 @@ public class Main {
 
         CropDuster cropDuster = new CropDuster();
         cropDuster.ride();
+
     }
 }
