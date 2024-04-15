@@ -4,35 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7853a1d5-52e0-4542-9784-398b52417c98" name="Changes" comment="CropRows and Fields">
-      <change afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/FroilanFarms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="7853a1d5-52e0-4542-9784-398b52417c98" name="Changes" comment="Coopa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/ChickenCoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/ChickenCoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/CornStalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/CornStalk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Crop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Crop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/CropRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/CropRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/EdibleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/EdibleObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Egg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Egg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Farm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Farm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Tomato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Tomato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/TomatoPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/TomatoPlant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "author": "JRThompson0"
+    }
+  ],
+  "lastFilter": {
+    "state": "OPEN",
+    "author": "JRThompson0"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="TreyComic" />
+        <option name="repository" value="FroilanProject" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="62ff7e5a-1ed0-4f06-881d-798a9aac3d62" />
+        <option name="url" value="git@github.com:TreyComic/FroilanProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EdibleObject.executor": "Run",
     "Application.FroilanFarms.executor": "Run",
     "git-widget-placeholder": "Jacob"
   }
 }]]></component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Flesh out crop functionality a bit">
+      <option name="closed" value="true" />
+      <created>1713141244383</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713141244383</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add check to harvestability" />
-    <option name="LAST_COMMIT_MESSAGE" value="add check to harvestability" />
+    <MESSAGE value="Flesh out crop functionality a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flesh out crop functionality a bit" />
   </component>
 </project>

@@ -15,22 +15,23 @@ public abstract class EdibleObject
     {
         return numberOf;
     }
-    public void setNumber(int setta){this.numberOf=setta;}
+    public void setNumber(int setta) {this.numberOf=setta;}
     public void AddPiles(EdibleObject addPile)
     {
         int addInt=addPile.getNumber();
         this.numberOf = this.numberOf+addInt;
         addPile.setNumber(0);
+        //the edible object being worked on gets the added sum. The other goes to 0.
     }
     public int subtractPile(int subtractNumber)
     {
         if(this.numberOf<subtractNumber)
         {
-            int returnValue = subtractNumber -this.numberOf;
+            int returnValue = subtractNumber-this.numberOf;
             this.numberOf=0;
             return returnValue;
-            // returnValue is the remainder from the subtracted number. Only if you're trying to subtract more than the
-            // pile has
+            // returnValue is the remainder from the subtracted number if you stop at 0. Only if you're trying to
+            // subtract more than the pile has.
         }
         else
         {
@@ -43,6 +44,8 @@ public abstract class EdibleObject
         EarCorn edibleObjectTest = new EarCorn(3);
         EarCorn edibleObjectTest2 = new EarCorn(3);
         edibleObjectTest.AddPiles(edibleObjectTest2);
+        System.out.println(edibleObjectTest.getNumber());
+        System.out.println(edibleObjectTest2.getNumber());
 
     }
 }
