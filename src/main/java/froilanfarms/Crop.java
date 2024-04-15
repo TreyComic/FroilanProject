@@ -4,18 +4,9 @@ public abstract class Crop
 {
     private boolean isFertilized;
     private boolean isHarvested;
-    public Crop()
-    {
+    public Crop() {
         boolean isFertilized = false;
         boolean isHarvested = false;
-    }
-    public void fertilize()
-    {
-        this.isFertilized = true;
-    }
-    public void harvest()
-    {
-        this.isHarvested = true;
     }
     public abstract EdibleObject yield();
 
@@ -25,5 +16,13 @@ public abstract class Crop
 
     public boolean isHarvested() {
         return isHarvested;
+    }
+
+    public void setHarvested(boolean harvested) {
+        isHarvested = harvested;
+    }
+
+    public void setFertilized(boolean fertilized) {
+        isFertilized = fertilized;
     }
 }

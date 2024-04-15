@@ -1,13 +1,13 @@
 package froilanfarms;
 
-public class CornStalk extends Crop
-{
+public class CornStalk extends Crop {
     @Override
-    public EdibleObject yield()
-    {
-        if ((super.isHarvested() && super.isFertilized()))
+    public EdibleObject yield() {
+        if (this.isFertilized() && this.isHarvested() == false) {
+            this.setHarvested(true);
             return new EarCorn();
-        else
+        } else {
             return null;
+        }
     }
 }
