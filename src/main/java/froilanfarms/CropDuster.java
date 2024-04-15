@@ -1,8 +1,8 @@
 package froilanfarms;
 
 public class CropDuster extends Aircraft implements FarmVehicle{
-    public boolean fertilize(CropRow cropRow) {
-        return true;
+    public void fertilize() {
+        System.out.println("Fertilizing crop row");
     }
 
     @Override
@@ -15,6 +15,6 @@ public class CropDuster extends Aircraft implements FarmVehicle{
     }
     @Override
     public void fly(Pilot pilot) {
-        System.out.println("The crop duster is flying");
+        System.out.println("The crop duster is flying and ready to fertilize");
     }
 }

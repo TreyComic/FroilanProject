@@ -1,7 +1,6 @@
 package froilanfarms;
 
 public abstract class Vehicle implements NoiseMaker, Rideable{
-    private boolean isInUse;
 
     public boolean isInUse() {
         return isInUse;
@@ -12,12 +11,10 @@ public abstract class Vehicle implements NoiseMaker, Rideable{
     }
 
     @Override
-    public void makeNoise() {
-        System.out.println("Vehicle is making noise!!");
-    }
+    public abstract void makeNoise();
 
-    @Override
-    public void ride() {
-        System.out.println("You are riding the vehicle!!");
-    }
+//    @Override
+//    public void ride() {
+//        System.out.println("You are riding the vehicle!!");
+//    }
 }

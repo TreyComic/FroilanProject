@@ -23,7 +23,8 @@ public class Chicken extends Animal implements Produce {
     @Override
     public EdibleObject yield() {
         if(getHasBeenFertilized() == false) {
-            return  egg;
+            EdibleObject egg = new Egg();
+            return egg;
         }
         return null;
     }
