@@ -1,19 +1,16 @@
 package froilanfarms;
 
-public class TomatoPlant extends Crop
-{
-    public TomatoPlant()
-    {
+public class TomatoPlant extends Crop {
+    public TomatoPlant() {
         super();
     }
     @Override
-    public EdibleObject yield()
-    {
-        if ((super.isHarvested() && super.isFertilized()))
-        {
+    public EdibleObject yield() {
+        if (this.isFertilized() && this.isHarvested() == false) {
+            this.setHarvested(true);
             return new Tomato();
-        }
-        else
+        } else {
             return null;
+        }
     }
 }
