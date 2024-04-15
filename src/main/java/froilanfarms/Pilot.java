@@ -1,4 +1,4 @@
 package froilanfarms;
 
-public interface Pilot {
+public interface Pilot{
 }

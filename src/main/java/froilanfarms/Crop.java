@@ -1,6 +1,6 @@
 package froilanfarms;
 
-abstract class Crop
+public abstract class Crop
 {
     private boolean isFertilized;
     private boolean isHarvested;
