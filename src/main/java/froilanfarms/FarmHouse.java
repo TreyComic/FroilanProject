@@ -1,5 +1,4 @@
 package froilanfarms;
-
 public class FarmHouse 
 {
     private Person[] people;
@@ -12,8 +11,8 @@ public class FarmHouse
     {
         if (count < people.length) 
         {
-            people[count] = person;
-            count++;
+          people[count] = person;
+          count++;
         }
     }
     public Person[] getPeople() 

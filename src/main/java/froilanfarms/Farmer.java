@@ -17,14 +17,12 @@ public class Farmer extends Person implements Botanist, Rider {
     public Farmer(String name) {
         this.name = name;
     }
-
-    public void buyFarm(String name) {
+    public void buyFarm(String name)
+    {
         Farm farm = new Farm();
         farm.setName(name);
         farm.getFarmHouse().getPersons()[0] = this;
     }
-
-
     @Override
     public void eat(EdibleObject edibleObject) {
         System.out.println();

@@ -1,5 +1,4 @@
 package froilanfarms;
-
 public class Field 
 {
     private CropRow[] cropRows;
