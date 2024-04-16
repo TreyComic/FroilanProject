@@ -1,11 +1,12 @@
 package froilanfarms;
 
 public class Pilot extends Person{
-    public Pilot(CropDuster cropDuster){
-
+    public Pilot(String name, CropDuster cropDuster){
+        super(name);
+        this.setCropDuster = cropDuster;
     }
     @Override
-    public void eat() {
+    public void eat(EdibleObject edibleObject) {
         System.out.println("Pilot is eating");
     }
 

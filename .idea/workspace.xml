@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07b76f37-939b-430d-a5fe-bea76adf2924" name="Changes" comment="Update boolean instance variables in Vehicle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Farmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Pilot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

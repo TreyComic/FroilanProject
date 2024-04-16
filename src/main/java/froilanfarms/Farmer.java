@@ -15,7 +15,7 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
     public Farmer(String name) {
-        this.name = name;
+        super(name);
     }
     public void buyFarm(String name)
     {
