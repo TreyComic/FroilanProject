@@ -21,7 +21,7 @@ public class Farmer extends Person implements Botanist, Rider {
     {
         Farm farm = new Farm();
         farm.setName(name);
-        farm.getFarmHouse().getPersons()[0] = this;
+        farm.getFarmHouse().getPeople()[0] = this;
     }
     @Override
     public void eat(EdibleObject edibleObject) {
@@ -54,9 +54,9 @@ public class Farmer extends Person implements Botanist, Rider {
     @Override
     public void plant(Crop crop, CropRow croprow) {
         int cropsPlanted = 0;
-        for (int i = 0; i < croprow.getRowCrops().length; i++) {
-            if (croprow.getRowCrops()[i] == null) {
-                croprow.getRowCrops()[i] = crop;
+        for (int i = 0; i < croprow.getCropRow().length; i++) {
+            if (croprow.getCropRow()[i] == null) {
+                croprow.getCropRow()[i] = crop;
                 cropsPlanted++;
             }
         }
@@ -74,7 +74,7 @@ public class Farmer extends Person implements Botanist, Rider {
             int chickensNotBought = 0;
 
             for (int i = 0; i < chickenCoop.getChickens().length; i++) {
-                if (chickenCoop.getChickens()[i] = null) {
+                if (chickenCoop.getChickens()[i] == null) {
                     chickenCoop.getChickens()[i] = new Chicken();
                     chickensBought++;
                 } else {

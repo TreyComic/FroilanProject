@@ -10,6 +10,10 @@ public class CropRow{
         return id;
     }
 
+    public Crop[] getCropRow() {
+        return cropRow;
+    }
+
     public void setCropRow(Crop[] cropRow) {
         this.cropRow = cropRow;
     }
