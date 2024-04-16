@@ -1,6 +1,10 @@
 package froilanfarms;
 
-public class Tomato extends EdibleObject{
+public class Tomato implements EdibleObject{
 
 
+    @Override
+    public String getDescription() {
+        return "A ripe and juicy tomato";
+    }
 }

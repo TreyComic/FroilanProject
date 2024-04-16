@@ -1,6 +1,5 @@
 package froilanfarms;
 
-public class EdibleObject
-{
-
+public interface EdibleObject {
+    String getDescription();
 }

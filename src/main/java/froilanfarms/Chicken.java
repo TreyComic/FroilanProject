@@ -2,7 +2,7 @@ package froilanfarms;
 
 public class Chicken extends Animal implements Produce {
     private boolean hasBeenFertilized;
-    private static int id = 1;
+    private static int id = 0;
     private int uniqueID;
     private Egg egg;
 
@@ -31,7 +31,7 @@ public class Chicken extends Animal implements Produce {
 
 
     @Override
-    public void eat() {
+    public void eat(EdibleObject edibleObject) {
         System.out.println("Eats corn");
     }
 
