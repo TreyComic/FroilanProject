@@ -26,8 +26,8 @@ public class Farmer extends Person implements Botanist, Rider {
 
 
     @Override
-    public void eat() {
-
+    public void eat(EdibleObject edibleObject) {
+        System.out.println();
     }
 
     @Override

@@ -29,7 +29,7 @@ public class Chicken extends Animal implements Produce {
 
 
     @Override
-    public void eat() {
+    public void eat(EdibleObject edibleObject) {
         System.out.println("Eats corn");
     }
 

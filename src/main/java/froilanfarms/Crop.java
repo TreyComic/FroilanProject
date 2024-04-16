@@ -16,15 +16,15 @@ public abstract class Crop
         return isFertilized;
     }
 
+    public void setFertilized(boolean fertilized) {
+        isFertilized = fertilized;
+    }
+
     public boolean isHarvested() {
         return isHarvested;
     }
 
     public void setHarvested(boolean harvested) {
         isHarvested = harvested;
-    }
-
-    public void setFertilized(boolean fertilized) {
-        isFertilized = fertilized;
     }
 }
