@@ -1,17 +1,23 @@
 package froilanfarms;
 public class Farm {
+    private String name;
     private Stable[] stables;
     private ChickenCoop[] chickenCoops;
     private FarmHouse farmHouse;
     private FarmVehicle[] farmVehicles;
-    private Aircraft[] aircrafts;
+    private Field field;
 
-    public Farm(Stable[] stables, ChickenCoop[] chickenCoops, FarmHouse farmHouse, FarmVehicle[] farmVehicles, Aircraft[] aircrafts) {
-        this.stables = stables;
-        this.chickenCoops = chickenCoops;
-        this.farmHouse = farmHouse;
-        this.farmVehicles = farmVehicles;
-        this.aircrafts = aircrafts;
+    public Farm() {
+        this.farmHouse = new FarmHouse();
+        this.field = new Field();
+        this.stables = new Stable[3];
+        this.chickenCoops = new ChickenCoop[4];
+        this.farmVehicles = new FarmVehicle[2];
+
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Stable[] getStables() {
@@ -26,31 +32,12 @@ public class Farm {
         return chickenCoops;
     }
 
-    public void setChickenCoops(ChickenCoop[] chickenCoops) {
-        this.chickenCoops = chickenCoops;
-    }
-
     public FarmHouse getFarmHouse() {
         return farmHouse;
-    }
-
-    public void setFarmHouse(FarmHouse farmHouse) {
-        this.farmHouse = farmHouse;
     }
 
     public FarmVehicle[] getFarmVehicles() {
         return farmVehicles;
     }
 
-    public void setFarmVehicles(FarmVehicle[] farmVehicles) {
-        this.farmVehicles = farmVehicles;
     }
-
-    public Aircraft[] getAircrafts() {
-        return aircrafts;
-    }
-
-    public void setAircrafts(Aircraft[] aircrafts) {
-        this.aircrafts = aircrafts;
-    }
-}

@@ -8,17 +8,22 @@ public class Horse extends Animal implements Rideable{
     }
 
     @Override
-    public void ride() {
-        System.out.println("I'm riding a horse!");
-    }
-
-    @Override
-    public void eat() {
+    public void eat(EdibleObject edibleObject) {
         System.out.println("Eats grains and oats.");
     }
 
     @Override
     public void makeNoise() {
         System.out.println("Neigh!");
+    }
+
+    @Override
+    public void mount() {
+
+    }
+
+    @Override
+    public void dismount() {
+
     }
 }
