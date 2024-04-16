@@ -5,7 +5,7 @@ public class Tractor extends Vehicle implements FarmVehicle {
         public EdibleObject[] harvest(Field field) {
             int count = 0;
             for(CropRow r : field.getCropRows()){
-                for(Crop c : r.getRowCrops()){
+                for(Crop c : r.getCropRow()){
                     if(c != null){
                         count++;
                     }
@@ -16,7 +16,7 @@ public class Tractor extends Vehicle implements FarmVehicle {
             int tomatos = 0;
             int earsOfCorn = 0;
             for(CropRow r : field.getCropRows()){
-                for(Crop c : r.getRowCrops()){
+                for(Crop c : r.getCropRow()){
                     if(c != null){
                         allHarvested[count2] = c.yield();
                     }
@@ -43,14 +43,9 @@ public class Tractor extends Vehicle implements FarmVehicle {
             System.out.println("Tractor noise!");
         }
 
-        @Override
-        public void mount () {
-            System.out.println("Mounting the tractor.");
-        }
+    @Override
+    public void ride() {
 
-        @Override
-        public void dismount () {
-            System.out.println("Dismounting the tractor.");
-        }
     }
+}
 
