@@ -2,19 +2,11 @@ package froilanfarms;
 public class FarmHouse 
 {
     private Person[] people;
-    private int count = 0;
-    public FarmHouse(int size) 
+    public FarmHouse()
     {
-        this.people = new Person[size];
+        this.people = new Person[2];
     }
-    public void addPerson(Person person) 
-    {
-        if (count < people.length) 
-        {
-          people[count] = person;
-          count++;
-        }
-    }
+
     public Person[] getPeople() 
     {
         return people;

@@ -17,12 +17,13 @@ public class Farmer extends Person implements Botanist, Rider {
     public Farmer(String name) {
         super(name);
     }
-    public void buyFarm(String name)
-    {
+
+    public void buyFarm(String name) {
         Farm farm = new Farm();
         farm.setName(name);
         farm.getFarmHouse().getPeople()[0] = this;
     }
+
     @Override
     public void eat(EdibleObject edibleObject) {
         System.out.println();
@@ -68,94 +69,99 @@ public class Farmer extends Person implements Botanist, Rider {
 
     }
 
-    public void buyChickens(int chickensToBuy, ChickenCoop chickenCoop) {
-        if (chickensToBuy <= 4) {
-            int chickensBought = 0;
-            int chickensNotBought = 0;
+    public void buyChickens(int chickensToBuy) {
+        int openChickenSlots = 0;
+        for (ChickenCoop c : this.farm.getChickenCoops()) {
+            for (Chicken chick : c.getChickens()) {
+                if (chick == null) {
+                    openChickenSlots++;
 
-            for (int i = 0; i < chickenCoop.getChickens().length; i++) {
-                if (chickenCoop.getChickens()[i] == null) {
-                    chickenCoop.getChickens()[i] = new Chicken();
-                    chickensBought++;
-                } else {
-                    chickensNotBought++;
                 }
             }
-            System.out.println(this.name + "bought " + chickensBought + " chickens.");
-            if (chickensNotBought > 0) {
-                System.out.println(this.name + " was unable to buy " + chickensNotBought + "chickens!");
+        }
+        int chickensBought = 0;
+        if (chickensToBuy <= openChickenSlots) {
+            for (ChickenCoop c : this.farm.getChickenCoops()) {
+                for (Chicken chick : c.getChickens()) {
+                    if (chick == null && chickensBought <= chickensToBuy) {
+                        chick = new Chicken();
+                    }
+                }
             }
 
+            System.out.println(this.name + "bought " + chickensToBuy + " chickens.");
+
         } else {
-            System.out.println(this.name + " can't buy " + chickensToBuy + " chickens! Max number of chickens is 4!");
+            System.out.println(this.name + " can't buy " + chickensToBuy + " chickens! Max number of chickens is " + openChickenSlots + "!");
         }
     }
 
 
-    public void buyHorses(int horsesToBuy, Stable stable) {
-        if (horsesToBuy <= 4) {
-            int horsesBought = 0;
-            int horsesNotBought = 0;
-
-            for (int i = 0; i < stable.getHorses().length; i++) {
-                if (stable.getHorses()[i] == null){
-                    stable.getHorses()[i] = new Horse();
-                    horsesBought++;
-                } else {
-                    horsesNotBought++;
+    public void buyHorses(int horsesToBuy) {
+        int openHorseSlots = 0;
+        for (Stable s : this.farm.getStables()) {
+            for (Horse h : s.getHorses()) {
+                if (h == null) {
+                    openHorseSlots++;
                 }
             }
-            System.out.println(this.name + "bought " + horsesBought + " horses.");
-            if (horsesNotBought > 0) {
-                System.out.println(this.name + " was unable to buy " + horsesNotBought + " horses!");
+        }
+        int horsesBought = 0;
+        if (horsesToBuy <= openHorseSlots) {
+            for (Stable s : this.farm.getStables()) {
+                for (Horse h : s.getHorses()) {
+                    if (h == null && horsesBought <= horsesToBuy) {
+                        h = new Horse();
+                    }
+                }
             }
 
+            System.out.println(this.name + "bought " + horsesToBuy + " horses.");
+
         } else {
-            System.out.println(this.name + " can't buy " + horsesToBuy + " horses! Max number of horses is 4!");
+            System.out.println(this.name + " can't buy " + horsesToBuy + " horses! Max number of horses is " + openHorseSlots + "!");
         }
     }
 
     public void buildStables(int numStablesToBuild) {
-        int numberStablesBuilt = 0;
-        int numberStablesNotBuilt = 0;
-        if (numStablesToBuild <= 3) {
-            for (int i = 0; i < numStablesToBuild; i++) {
-                if (this.getFarm().getStables()[i] == null) {
-                    this.getFarm().getStables()[i] = new Stable();
-                    numberStablesBuilt++;
-                } else {
-                    numberStablesNotBuilt++;
+        int openStableSlots = 0;
+        for (Stable s : this.farm.getStables()) {
+            if (s == null) {
+                openStableSlots++;
+            }
+        }
+        int stablesBuilt = 0;
+        if (numStablesToBuild <= openStableSlots) {
+            for (Stable s : this.farm.getStables()) {
+                if (s == null && stablesBuilt <= numStablesToBuild) {
+                    s = new Stable();
+                    stablesBuilt++;
                 }
             }
-            System.out.println(this.name + "built " + numberStablesBuilt + " stables.");
-            if (numberStablesNotBuilt > 0) {
-                System.out.println(this.name + " was unable to build " + numberStablesNotBuilt + " stables!");
-            }
-
+            System.out.println(this.name + "built " + stablesBuilt + " stables.");
         } else {
-            System.out.println(this.name + " can't build " + numStablesToBuild + " stables! Max number of stables is 3!");
+            System.out.println(this.name + " can't build " + numStablesToBuild + " stables! Max number of stables is " + openStableSlots + "!");
         }
     }
 
     public void buildChickenCoup(int numChickenCoupToBuild) {
-        int numberChickenCoupBuilt = 0;
-        int numberChickenCoupNotBuilt = 0;
-        if (numChickenCoupToBuild <= 4) {
-            for (int i = 0; i < numChickenCoupToBuild; i++) {
-                if (this.getFarm().getChickenCoops()[i] == null) {
-                    this.getFarm().getChickenCoops()[i] = new ChickenCoop();
-                    numberChickenCoupBuilt++;
-                } else {
-                    numberChickenCoupNotBuilt++;
+        int openChickenCoupSlots = 0;
+        for (ChickenCoop c : this.farm.getChickenCoops()) {
+            if (c == null) {
+                openChickenCoupSlots++;
+            }
+        }
+        int chickenCoupsBuilt = 0;
+        if (numChickenCoupToBuild <= openChickenCoupSlots) {
+            for (ChickenCoop c : this.farm.getChickenCoops()) {
+                if (c == null && chickenCoupsBuilt <= numChickenCoupToBuild) {
+                    c = new ChickenCoop();
+                    chickenCoupsBuilt++;
                 }
             }
-            System.out.println(this.name + "built " + numberChickenCoupBuilt + "chicken coups.");
-            if (numberChickenCoupNotBuilt > 0) {
-                System.out.println(this.name + " was unable to build " + numberChickenCoupNotBuilt + "chicken coups!");
-            }
-
+            System.out.println(this.name + "built " + chickenCoupsBuilt + " stables.");
         } else {
-            System.out.println(this.name + " can't build " + numChickenCoupToBuild + " stables! Max number of chicken coups is 4!");
+            System.out.println(this.name + " can't build " + numChickenCoupToBuild + " stables! Max number of stables is " + openChickenCoupSlots + "!");
         }
     }
 }
