@@ -1,17 +1,17 @@
 package froilanfarms;
-
-public class Field {
+public class Field 
+{
     private CropRow[] cropRows;
-
-    public void setCropRows(CropRow[] cropRows) {
+    public void setCropRows(CropRow[] cropRows) 
+    {
         this.cropRows = cropRows;
     }
-
-    public Field(){
+    public Field()
+    {
         this.cropRows = new CropRow[8];
     }
-
-    public CropRow[] getCropRows() {
+    public CropRow[] getCropRows()
+    {
         return cropRows;
     }
 }
