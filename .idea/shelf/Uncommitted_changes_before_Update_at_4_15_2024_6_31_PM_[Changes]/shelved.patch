@@ -1,0 +1,110 @@
+Index: src/main/java/froilanfarms/Pilot.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package froilanfarms;\r\n\r\npublic class Pilot extends Person{\r\n    public Pilot(CropDuster cropDuster){\r\n    }\r\n    @Override\r\n    public void eat() {\r\n\r\n    }\r\n\r\n    @Override\r\n    public void makeNoise() {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/froilanfarms/Pilot.java b/src/main/java/froilanfarms/Pilot.java
+--- a/src/main/java/froilanfarms/Pilot.java	(revision e4922875e96cdec722be74c740680ab498297af1)
++++ b/src/main/java/froilanfarms/Pilot.java	(date 1713143902765)
+@@ -5,11 +5,11 @@
+     }
+     @Override
+     public void eat() {
+-
++        System.out.println("Pilot is eating");
+     }
+ 
+     @Override
+     public void makeNoise() {
+-
++        System.out.println("Pilot is talking.");
+     }
+ }
+Index: src/main/java/froilanfarms/Farmer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package froilanfarms;\r\n\r\npublic class Farmer extends Person implements Botanist, Rider{\r\n    private Farm farm;\r\n    public Farm getFarm() {\r\n        return farm;\r\n    }\r\n\r\n    public Farmer(Farm farm){\r\n        this.farm = farm;\r\n    }\r\n    public void buildFarm(){}\r\n    @Override\r\n    public void eat() {\r\n\r\n    }\r\n    @Override\r\n    public void mount(Rideable rideable) {\r\n        if(rideable instanceof Vehicle) {\r\n            ((Vehicle) rideable).setInUse(true);\r\n        }\r\n        rideable.ride();\r\n        System.out.println(\"This \" + rideable + \" is in use\");\r\n    }\r\n\r\n    @Override\r\n    public void dismount(Rideable rideable) {\r\n        if(rideable instanceof Vehicle) {\r\n            ((Vehicle) rideable).setInUse(false);\r\n        }\r\n        System.out.println(\"This \" + rideable + \" is free to use\");\r\n    }\r\n\r\n    @Override\r\n    public void makeNoise() {\r\n        System.out.println(\"Farmer is speaking.\");\r\n\r\n    }\r\n\r\n    @Override\r\n    public void plant(Crop crop, CropRow croprow) {\r\n        for(int i = 0; i < croprow.rowCrops.length; i++) {\r\n            if (croprow.rowCrops[i] == null) {\r\n                croprow.rowCrops[i] = crop;\r\n            }\r\n        }\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/froilanfarms/Farmer.java b/src/main/java/froilanfarms/Farmer.java
+--- a/src/main/java/froilanfarms/Farmer.java	(revision e4922875e96cdec722be74c740680ab498297af1)
++++ b/src/main/java/froilanfarms/Farmer.java	(date 1713180592603)
+@@ -9,26 +9,21 @@
+     public Farmer(Farm farm){
+         this.farm = farm;
+     }
+-    public void buildFarm(){}
++    public void buildFarm(Farm farm){
++    }
++
+     @Override
+     public void eat() {
+-
++        System.out.println("Farmer is eating.");
+     }
+     @Override
+     public void mount(Rideable rideable) {
+-        if(rideable instanceof Vehicle) {
+-            ((Vehicle) rideable).setInUse(true);
+-        }
+-        rideable.ride();
+-        System.out.println("This " + rideable + " is in use");
++        System.out.println("This " + rideable + " has been mounted");
+     }
+ 
+     @Override
+     public void dismount(Rideable rideable) {
+-        if(rideable instanceof Vehicle) {
+-            ((Vehicle) rideable).setInUse(false);
+-        }
+-        System.out.println("This " + rideable + " is free to use");
++        System.out.println("This " + rideable + " has been dismounted");
+     }
+ 
+     @Override
+Index: src/main/java/froilanfarms/ChickenCoop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package froilanfarms;\r\n\r\n\r\npublic class ChickenCoop {\r\n    private Horse[] horses;\r\n    private int StaticID;\r\n    private int UniqueID;\r\n\r\npublic class ChickenCoop{\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/froilanfarms/ChickenCoop.java b/src/main/java/froilanfarms/ChickenCoop.java
+--- a/src/main/java/froilanfarms/ChickenCoop.java	(revision e4922875e96cdec722be74c740680ab498297af1)
++++ b/src/main/java/froilanfarms/ChickenCoop.java	(date 1713179902837)
+@@ -6,6 +6,6 @@
+     private int StaticID;
+     private int UniqueID;
+ 
+-public class ChickenCoop{
+-
++    public class ChickenCoop {
++    }
+ }
+Index: src/main/java/froilanfarms/Vehicle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package froilanfarms;\r\n\r\npublic abstract class Vehicle implements NoiseMaker, Rideable{\r\n    private boolean isInUse;\r\n\r\n    public boolean isInUse() {\r\n        return isInUse;\r\n    }\r\n\r\n    public void setInUse(boolean inUse) {\r\n        isInUse = inUse;\r\n    }\r\n\r\n    @Override\r\n    public void makeNoise() {\r\n        System.out.println(\"Vehicle is making noise!!\");\r\n    }\r\n\r\n    @Override\r\n    public void ride() {\r\n        System.out.println(\"You are riding the vehicle!!\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/froilanfarms/Vehicle.java b/src/main/java/froilanfarms/Vehicle.java
+--- a/src/main/java/froilanfarms/Vehicle.java	(revision e4922875e96cdec722be74c740680ab498297af1)
++++ b/src/main/java/froilanfarms/Vehicle.java	(date 1713143251535)
+@@ -3,11 +3,11 @@
+ public abstract class Vehicle implements NoiseMaker, Rideable{
+     private boolean isInUse;
+ 
+-    public boolean isInUse() {
++    public boolean getIsInUse() {
+         return isInUse;
+     }
+ 
+-    public void setInUse(boolean inUse) {
++    public void setIsInUse(boolean inUse) {
+         isInUse = inUse;
+     }
+ 

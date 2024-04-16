@@ -1,11 +1,26 @@
 package froilanfarms;
-public class CropRow
-{
-    private Crop[] rowCrops;
+public class CropRow{
+    private Crop[] cropRow;
 
-    public Crop[] getRowCrops() {
-        return rowCrops;
+    private int id = 0;
+
+    public static int uniqueID;
+
+    public int getId(){
+        return id;
     }
 
-
+    public Crop[] getCropRow() {
+        return cropRow;
     }
+
+    public void setCropRow(Crop[] cropRow) {
+        this.cropRow = cropRow;
+    }
+     public CropRow(){
+         this.cropRow = new Crop[10];
+         uniqueID++;
+         id = uniqueID;
+     }
+
+}

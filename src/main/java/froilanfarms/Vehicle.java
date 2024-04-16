@@ -1,20 +1,38 @@
 package froilanfarms;
 
 public abstract class Vehicle implements NoiseMaker, Rideable{
+    private boolean isMounted;
+    private boolean isBeingRidden;
 
-    public boolean isInUse() {
-        return isInUse;
+    private static int id = 0;
+    private int uniqueID;
+
+    public void setMounted(boolean isMounted) {
+        if (Rider.mount()){
+            isMounted = true;
+        } else {isMounted = false;}
+        this.isMounted = isMounted;
+
     }
 
-    public void setInUse(boolean inUse) {
-        isInUse = inUse;
+    public void setBeingRidden(boolean isBeingRidden) {
+        if (Rider.dismount()) {
+            isBeingRidden = false;
+        } else {isBeingRidden = true;}
+        this.isBeingRidden = isBeingRidden;
     }
 
-    @Override
-    public abstract void makeNoise();
+    public boolean isMounted() {
+        return isMounted;
+    }
 
-//    @Override
-//    public void ride() {
-//        System.out.println("You are riding the vehicle!!");
-//    }
+    public boolean isBeingRidden() {
+        return isBeingRidden;
+    }
+
+    public Vehicle(){
+        this.uniqueID = id;
+        id++;
+    }
+
 }

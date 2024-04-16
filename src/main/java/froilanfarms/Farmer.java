@@ -15,7 +15,7 @@ public class Farmer extends Person implements Botanist, Rider {
     }
 
     public Farmer(String name) {
-        this.name = name;
+        super(name);
     }
 
     public void buyFarm(String name) {
@@ -55,9 +55,9 @@ public class Farmer extends Person implements Botanist, Rider {
     @Override
     public void plant(Crop crop, CropRow croprow) {
         int cropsPlanted = 0;
-        for (int i = 0; i < croprow.getRowCrops().length; i++) {
-            if (croprow.getRowCrops()[i] == null) {
-                croprow.getRowCrops()[i] = crop;
+        for (int i = 0; i < croprow.getCropRow().length; i++) {
+            if (croprow.getCropRow()[i] == null) {
+                croprow.getCropRow()[i] = crop;
                 cropsPlanted++;
             }
         }
@@ -75,6 +75,7 @@ public class Farmer extends Person implements Botanist, Rider {
             for (Chicken chick : c.getChickens()) {
                 if (chick == null) {
                     openChickenSlots++;
+
                 }
             }
         }
