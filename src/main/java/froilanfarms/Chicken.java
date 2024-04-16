@@ -2,13 +2,12 @@ package froilanfarms;
 
 public class Chicken extends Animal implements Produce {
     private boolean hasBeenFertilized;
-    private static int id = 1;
+    private static int id = 0;
     private int uniqueID;
-    private Egg egg;
-
-    public Chicken(boolean fertilized) {
-        setHasBeenFertilized(fertilized);
-        uniqueID = id++;
+    public Chicken() {
+        this.hasBeenFertilized = true;
+        this.uniqueID = id;
+        id++;
     }
 
     public boolean getHasBeenFertilized() {
@@ -23,8 +22,7 @@ public class Chicken extends Animal implements Produce {
     @Override
     public EdibleObject yield() {
         if(getHasBeenFertilized() == false) {
-            EdibleObject egg = new Egg();
-            return egg;
+            return new Egg();
         }
         return null;
     }
@@ -37,6 +35,6 @@ public class Chicken extends Animal implements Produce {
 
     @Override
     public void makeNoise() {
-        System.out.println("cluck cluck");
+        System.out.println("Cluck cluck!");
     }
 }
