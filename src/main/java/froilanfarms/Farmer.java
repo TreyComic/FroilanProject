@@ -2,16 +2,11 @@ package froilanfarms;
 
 public class Farmer extends Person implements Botanist, Rider {
     private Farm farm;
-    private String name;
 
     private boolean hasFarm;
 
     public Farm getFarm() {
         return farm;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public Farmer(String name) {
@@ -89,10 +84,10 @@ public class Farmer extends Person implements Botanist, Rider {
                 }
             }
 
-            System.out.println(this.name + "bought " + chickensToBuy + " chickens.");
+            System.out.println( getName() + "bought " + chickensToBuy + " chickens.");
 
         } else {
-            System.out.println(this.name + " can't buy " + chickensToBuy + " chickens! Max number of chickens is " + openChickenSlots + "!");
+            System.out.println(getName() + " can't buy " + chickensToBuy + " chickens! Max number of chickens is " + openChickenSlots + "!");
         }
     }
 
@@ -116,10 +111,10 @@ public class Farmer extends Person implements Botanist, Rider {
                 }
             }
 
-            System.out.println(this.name + "bought " + horsesToBuy + " horses.");
+            System.out.println(getName() + "bought " + horsesToBuy + " horses.");
 
         } else {
-            System.out.println(this.name + " can't buy " + horsesToBuy + " horses! Max number of horses is " + openHorseSlots + "!");
+            System.out.println(getName() + " can't buy " + horsesToBuy + " horses! Max number of horses is " + openHorseSlots + "!");
         }
     }
 
@@ -138,9 +133,9 @@ public class Farmer extends Person implements Botanist, Rider {
                     stablesBuilt++;
                 }
             }
-            System.out.println(this.name + "built " + stablesBuilt + " stables.");
+            System.out.println(getName() + "built " + stablesBuilt + " stables.");
         } else {
-            System.out.println(this.name + " can't build " + numStablesToBuild + " stables! Max number of stables is " + openStableSlots + "!");
+            System.out.println(getName() + " can't build " + numStablesToBuild + " stables! Max number of stables is " + openStableSlots + "!");
         }
     }
 
@@ -159,9 +154,9 @@ public class Farmer extends Person implements Botanist, Rider {
                     chickenCoupsBuilt++;
                 }
             }
-            System.out.println(this.name + "built " + chickenCoupsBuilt + " stables.");
+            System.out.println(getName() + "built " + chickenCoupsBuilt + " stables.");
         } else {
-            System.out.println(this.name + " can't build " + numChickenCoupToBuild + " stables! Max number of stables is " + openChickenCoupSlots + "!");
+            System.out.println(getName() + " can't build " + numChickenCoupToBuild + " stables! Max number of stables is " + openChickenCoupSlots + "!");
         }
     }
 }
