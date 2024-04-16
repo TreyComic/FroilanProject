@@ -31,7 +31,7 @@ public class Farmer extends Person implements Botanist, Rider {
     @Override
     public void mount(Rideable rideable) {
         if (rideable instanceof Vehicle) {
-            ((Vehicle) rideable).setInUse(true);
+            ((Vehicle) rideable).setMounted(true);
         }
         rideable.ride();
         System.out.println("This " + rideable + " is in use.");
@@ -40,7 +40,7 @@ public class Farmer extends Person implements Botanist, Rider {
     @Override
     public void dismount(Rideable rideable) {
         if (rideable instanceof Vehicle) {
-            ((Vehicle) rideable).setInUse(false);
+            ((Vehicle) rideable).setBeingRidden(false);
         }
         System.out.println("This " + rideable + " is free to use.");
     }
