@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="07b76f37-939b-430d-a5fe-bea76adf2924" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/ChickenCoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/ChickenCoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/CropRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/CropRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Farmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +42,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "git-widget-placeholder": "Rene"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "git-widget-placeholder": "Elizabeth",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -57,7 +65,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="67f2a066-7753-45ad-8e19-6ebcaeae8bfc" name="Changes" comment="" />
+      <changelist id="07b76f37-939b-430d-a5fe-bea76adf2924" name="Changes" comment="" />
       <created>1713050456524</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

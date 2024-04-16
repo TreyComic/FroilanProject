@@ -1,12 +1,13 @@
 package froilanfarms;
 
 public abstract class Vehicle implements NoiseMaker, Rideable{
+    
 
-    public boolean isInUse() {
+    public boolean getIsInUse() {
         return isInUse;
     }
 
-    public void setInUse(boolean inUse) {
+    public void setIsInUse(boolean inUse) {
         isInUse = inUse;
     }
 

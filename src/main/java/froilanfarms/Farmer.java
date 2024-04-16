@@ -9,26 +9,21 @@ public class Farmer extends Person implements Botanist, Rider{
     public Farmer(Farm farm){
         this.farm = farm;
     }
-    public void buildFarm(){}
+    public void buildFarm(Farm farm){
+    }
+
     @Override
     public void eat() {
-
+        System.out.println("Farmer is eating.");
     }
     @Override
     public void mount(Rideable rideable) {
-        if(rideable instanceof Vehicle) {
-            ((Vehicle) rideable).setInUse(true);
-        }
-        rideable.ride();
-        System.out.println("This " + rideable + " is in use");
+        System.out.println("This " + rideable + " has been mounted");
     }
 
     @Override
     public void dismount(Rideable rideable) {
-        if(rideable instanceof Vehicle) {
-            ((Vehicle) rideable).setInUse(false);
-        }
-        System.out.println("This " + rideable + " is free to use");
+        System.out.println("This " + rideable + " has been dismounted");
     }
 
     @Override

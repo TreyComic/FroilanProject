@@ -6,6 +6,6 @@ public class ChickenCoop {
     private int StaticID;
     private int UniqueID;
 
-public class ChickenCoop{
-
+    public class ChickenCoop {
+    }
 }
