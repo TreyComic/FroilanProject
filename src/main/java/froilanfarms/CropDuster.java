@@ -27,4 +27,9 @@ public class CropDuster extends Aircraft implements FarmVehicle{
     public void dismount() {
         System.out.println("Dismounting the crop duster.");
     }
+
+    @Override
+    public void ride() {
+
+    }
 }
