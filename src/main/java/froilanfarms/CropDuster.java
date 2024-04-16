@@ -1,12 +1,9 @@
 package froilanfarms;
 
 public class CropDuster extends Aircraft implements FarmVehicle{
-
-
     public void fertilize() {
         System.out.println("Crop duster is fertilizing crop row");
     }
-
     @Override
     public void operate() {
         System.out.println("Now operating crop duster on ");
