@@ -2,5 +2,5 @@ package froilanfarms;
 
 public interface Eater
 {
-    public void eat();
+    public void eat(EdibleObject edibleObject);
 }
