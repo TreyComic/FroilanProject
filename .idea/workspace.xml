@@ -6,19 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07b76f37-939b-430d-a5fe-bea76adf2924" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Chicken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/CornStalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/CornStalk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Crop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Crop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/CropDuster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/CropDuster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/CropRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/CropRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/FarmVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/FarmVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Rideable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Rideable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Rider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Rider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Tomato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Tomato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/TomatoPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/TomatoPlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Tractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Tractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/FarmHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/FarmHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/froilanfarms/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/froilanfarms/Farmer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f60037fe7994a1123142905338c1200045c9f6fc" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,24 +43,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "git-widget-placeholder": "Rene"
+    "git-widget-placeholder": "Fixing__Generators"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="FroilanProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="FroilanProject" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
