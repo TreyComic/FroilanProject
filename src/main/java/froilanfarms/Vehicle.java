@@ -7,19 +7,12 @@ public abstract class Vehicle implements NoiseMaker, Rideable{
     private static int id = 0;
     private int uniqueID;
 
-    public void setMounted(boolean isMounted) {
-        if (Rider.mount()){
-            isMounted = true;
-        } else {isMounted = false;}
-        this.isMounted = isMounted;
-
+    public void setMounted(boolean mounted) {
+        isMounted = mounted;
     }
 
-    public void setBeingRidden(boolean isBeingRidden) {
-        if (Rider.dismount()) {
-            isBeingRidden = false;
-        } else {isBeingRidden = true;}
-        this.isBeingRidden = isBeingRidden;
+    public void setBeingRidden(boolean beingRidden) {
+        isBeingRidden = beingRidden;
     }
 
     public boolean isMounted() {
