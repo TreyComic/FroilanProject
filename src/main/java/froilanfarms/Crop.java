@@ -2,6 +2,8 @@ package froilanfarms;
 
 public abstract class Crop
 {
+
+    private String cropType;
     private boolean isFertilized;
     private boolean isHarvested;
     public Crop() {
