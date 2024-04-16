@@ -1,5 +1,5 @@
 package froilanfarms;
 
 public interface FarmVehicle {
-    void operate(Farm farm);
+    void operate();
 }
