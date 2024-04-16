@@ -18,12 +18,7 @@ public class Horse extends Animal implements Rideable{
     }
 
     @Override
-    public void mount() {
-
-    }
-
-    @Override
-    public void dismount() {
-
+    public void ride() {
+        System.out.println("Horse is being ridden");
     }
 }
